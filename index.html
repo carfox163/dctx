@@ -33,7 +33,6 @@
     -webkit-font-smoothing:antialiased;
   }
   .wrap{max-width:960px;margin:0 auto;padding:24px 18px 60px}
-
   /* ===== 顶栏品牌 ===== */
   .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px;flex-wrap:wrap;gap:12px}
   .brand{display:flex;align-items:center;gap:10px}
@@ -41,18 +40,15 @@
   .brand-name{font-weight:900;font-size:16px;letter-spacing:.6px}
   .brand-name em{font-style:normal;color:var(--accent)}
   .deploy-note{font-size:12px;color:var(--muted)}
-
   /* ===== Hero ===== */
   .hero{margin-bottom:28px}
   .hero h1{font-size:clamp(26px,4.6vw,38px);font-weight:900;line-height:1.25;letter-spacing:.5px}
   .hero p{margin-top:8px;color:var(--muted);font-size:15px;max-width:640px}
-
   /* ===== 卡片 ===== */
   .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:18px}
   .card-title{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;margin-bottom:14px}
   .card-title .step-num{width:26px;height:26px;border-radius:50%;background:var(--primary);color:#fff;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
   .hint{font-size:12.5px;color:var(--muted);margin-bottom:10px}
-
   /* ===== 输入区 ===== */
   textarea{
     width:100%;min-height:150px;padding:14px;border:1.5px solid var(--line);border-radius:12px;
@@ -66,7 +62,6 @@
   .chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px}
   .chip{background:#F3F0E7;border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:13px;color:#4a545e}
   .chip b{color:var(--primary);font-weight:700;margin-right:5px}
-
   /* ===== 设置区 ===== */
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
@@ -82,7 +77,6 @@
   .seg{display:flex;background:#F0EDE3;border-radius:10px;padding:3px;gap:3px}
   .seg button{flex:1;border:none;background:transparent;padding:8px 6px;border-radius:8px;font-family:inherit;font-size:13.5px;font-weight:600;color:var(--muted);cursor:pointer}
   .seg button.active{background:var(--card);color:var(--primary-deep);box-shadow:0 1px 4px rgba(0,0,0,.08)}
-
   /* ===== 操作区 ===== */
   .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
   .btn{
@@ -100,7 +94,6 @@
   .btn-danger{background:var(--danger-soft);color:var(--danger);border:1.5px solid var(--danger)}
   .btn:disabled{opacity:.45;cursor:not-allowed}
   .btn .ic-on{display:none}
-
   /* 进度 */
   .progress-block{margin-top:20px}
   .progress-bar{height:8px;background:#ECE7DA;border-radius:999px;overflow:hidden}
@@ -110,14 +103,12 @@
   .status.running .dot{background:var(--accent);animation:blink 1s infinite}
   .status.done .dot{background:var(--primary)}
   @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
-
   /* ===== 提示 ===== */
   .toast-wrap{position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:60;display:flex;flex-direction:column;gap:8px;align-items:center;pointer-events:none}
   .toast{background:var(--ink);color:#fff;padding:11px 18px;border-radius:12px;font-size:13.5px;box-shadow:0 8px 24px rgba(0,0,0,.2);max-width:90vw;opacity:0;transform:translateY(8px);transition:opacity .25s,transform .25s}
   .toast.show{opacity:1;transform:translateY(0)}
   .toast.error{background:var(--danger)}
   .toast.ok{background:var(--primary)}
-
   /* ===== 弹层 ===== */
   .overlay{position:fixed;inset:0;background:rgba(24,33,40,.5);display:none;align-items:center;justify-content:center;z-index:70;padding:18px}
   .overlay.show{display:flex}
@@ -127,11 +118,9 @@
   .modal ol li{margin-bottom:7px}
   .modal .note{background:var(--accent-soft);border:1px solid #eecf9c;border-radius:10px;padding:10px 12px;font-size:12.5px;color:#6a4d14;margin-bottom:16px}
   .modal-actions{display:flex;gap:10px;justify-content:flex-end}
-
   .footer{margin-top:30px;color:var(--muted);font-size:12.5px;line-height:1.9;border-top:1px dashed var(--line);padding-top:16px}
   .footer b{color:#3d4853}
   code{background:#F0EDE3;border-radius:6px;padding:1px 6px;font-size:12px}
-
   @media (max-width:640px){
     .grid2,.grid3{grid-template-columns:1fr}
     .actions .btn{flex:1 1 100%}
@@ -143,20 +132,17 @@
 </head>
 <body>
 <div class="wrap">
-
   <div class="topbar">
     <div class="brand">
       <div class="brand-mark">CL</div>
       <div class="brand-name">Creative <em>Learner</em></div>
     </div>
-    <div class="deploy-note"><a href="https://github.com/carfox163/dctx" >github By CreativeLearner </a>  v1.1 </div>
+    <div class="deploy-note"><a href="https://github.com/carfox163/dctx" >Github Powered By CreativeLearner  v1.1 </a> </div>
   </div>
-
   <div class="hero">
     <h1>单词听写音频生成器</h1>
     <p>把要听写的单词列表粘贴进来，一键生成"每个单词朗读两遍、自动报序号、留有书写间隔"的标准听写音频。可在线播放，也可下载保存，完全在浏览器本地完成，不上传任何数据。</p>
   </div>
-
   <!-- ===== 步骤1：输入单词 ===== -->
   <section class="card">
     <div class="card-title"><span class="step-num">1</span>输入单词列表</div>
@@ -169,8 +155,7 @@
     </div>
     <div class="chips" id="chips"></div>
   </section>
-
-  <!-- ===== 步骤2：听写设置 ===== -->
+  <!-- ===== 步骤2：听写与朗读设置 ===== -->
   <section class="card">
     <div class="card-title"><span class="step-num">2</span>听写与朗读设置</div>
     <div class="grid2">
@@ -196,9 +181,10 @@
       </div>
       <div class="field">
         <label>序号朗读方式</label>
+        <!-- 修改默认active为阿拉伯数字 num -->
         <div class="seg" id="ordinalSeg">
-          <button data-mode="cn" class="active" type="button">第1题</button>
-          <button data-mode="num" type="button">阿拉伯 1</button>
+          <button data-mode="cn" type="button">第1题</button>
+          <button data-mode="num" class="active" type="button">仅数字</button>
         </div>
       </div>
       <div class="field">
@@ -211,7 +197,7 @@
     </div>
     <div class="grid3" style="margin-top:14px">
       <div class="field">
-        <label>中文音色（序号 / 开场）</label>
+        <label>中文音色（序号 / 注意事项）</label>
         <select id="voiceZh"></select>
       </div>
       <div class="field">
@@ -227,29 +213,28 @@
       </div>
     </div>
   </section>
-
   <!-- ===== 步骤3：生成与播放 ===== -->
   <section class="card">
     <div class="card-title"><span class="step-num">3</span>生成、播放与下载</div>
     <div class="actions">
       <button class="btn btn-primary" id="btnPlay" type="button">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z" /></svg>
         在线播放
       </button>
       <button class="btn btn-accent" id="btnRecord" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="3" fill="currentColor" stroke="none" /></svg>
         下载音频
       </button>
       <button class="btn btn-ghost" id="btnPause" type="button" disabled>
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z" /></svg>
         暂停
       </button>
       <button class="btn btn-ghost" id="btnPreview" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l9 6-9 6z"/></svg>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 6l9 6-9 6z" /></svg>
         试听（前1个单词）
       </button>
       <button class="btn btn-danger" id="btnStop" type="button" disabled>
-        <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1"/></svg>
+        <svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1" /></svg>
         停止
       </button>
     </div>
@@ -257,16 +242,14 @@
       <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
       <div class="status" id="status"><span class="dot"></span><span id="statusText">准备中…</span></div>
     </div>
-    <div class="hint" style="margin-top:16px">播放与试听无需任何授权，立即生效。下载音频首次使用时，浏览器会弹出系统分享面板，请选择"当前标签页/此标签页"并勾选"分享标签页音频"后即可录音生成。</div>
+    <div class="hint" style="margin-top:16px">目前下载功能正在开发调试中仅支持内录生成音频。播放与试听无需任何授权，立即生效。</div>
   </section>
-
   <div class="footer">
-    <p><b>CreativeLearner说明：① 朗读使用浏览器自带的语音合成（Web Speech API），在线播放即点即用；② 下载音频依赖"录音本机/标签页声音"能力，推荐在电脑Edge浏览器上操作（手机浏览器一般不支持）；③ 目前下载功能正在开发调试中，将在近期下个版本升级。下载后文件为WebM/Opus格式，可被主流播放器及剪辑软件打开。</p>
+    <p><b>CreativeLearner说明：① 朗读使用浏览器自带的语音合成（Web Speech API），在线播放即点即用；② 下载音频依赖"录音本机/标签页声音"能力，推荐在电脑Edge浏览器上操作（手机浏览器一般不支持）；③ 目前下载功能正在开发调试中，将在近期下个版本升级。下载后文件为WebM/Opus格式，可被主流播放器及剪辑软件打开。                     
+<b><a href="https://github.com/carfox163/dctx" >Github Powered By CreativeLearner </a>  v1.1</p>
   </div>
 </div>
-
 <div class="toast-wrap" id="toastWrap"></div>
-
 <!-- ===== 下载说明弹层 ===== -->
 <div class="overlay" id="recordOverlay">
   <div class="modal">
@@ -284,28 +267,27 @@
     </div>
   </div>
 </div>
-
 <script>
 (function(){
   "use strict";
-
   /* ================= 语音引擎 ================= */
   var zhVoice = null, enVoice = null;
   var voicesLoaded = false;
-
   function refreshVoices(){
     if(!('speechSynthesis' in window)){ return; }
     var vs = window.speechSynthesis.getVoices();
     if(!vs.length){ return; }
     voicesLoaded = true;
-    // 英文音色：优先 en-US/en-GB 中的女声
+    // ========== 修改：优先 Microsoft Xiaoxiao 中文，Microsoft Ryan 英文 ==========
     var enCands = vs.filter(function(v){ return /^en\b/i.test(v.lang); });
-    var enDefault = enCands.find(function(v){ return /US|United\s*States|Samantha|Zira|Jenny|Female|Microsoft/i.test(v.name + ' ' + v.lang); })
+    var enDefault = enCands.find(function(v){ return /Microsoft Ryan/i.test(v.name); })
+                 || enCands.find(function(v){ return /US|United\s*States|Samantha|Zira|Jenny|Female|Microsoft/i.test(v.name + ' ' + v.lang); })
                  || enCands.find(function(v){ return /en-US/i.test(v.lang); })
                  || enCands[0] || null;
-    // 中文音色
+
     var zhCands = vs.filter(function(v){ return /^zh/i.test(v.lang); });
-    var zhDefault = zhCands.find(function(v){ return /zh-CN|China|Mandarin|Xiaoxiao|Huihui|Yaoyao/i.test(v.name + ' ' + v.lang); })
+    var zhDefault = zhCands.find(function(v){ return /Microsoft Xiaoxiao/i.test(v.name); })
+                 || zhCands.find(function(v){ return /zh-CN|China|Mandarin|Xiaoxiao|Huihui|Yaoyao/i.test(v.name + ' ' + v.lang); })
                  || zhCands.find(function(v){ return /zh-CN/i.test(v.lang); })
                  || zhCands[0] || null;
 
@@ -326,11 +308,21 @@
       o.textContent = (v.name || v.lang) + ' (' + v.lang + ')';
       selEn.appendChild(o);
     });
-    if(curZh){ selZh.value = curZh; }
-    if(curEn){ selEn.value = curEn; }
+
+    // 强制选中目标音色（如果浏览器存在该音色）
+    if(zhDefault){
+      selZh.value = zhDefault.name + '|' + zhDefault.lang;
+    }else if(curZh){
+      selZh.value = curZh;
+    }
+    if(enDefault){
+      selEn.value = enDefault.name + '|' + enDefault.lang;
+    }else if(curEn){
+      selEn.value = curEn;
+    }
+
     applySelectedVoices();
   }
-
   function applySelectedVoices(){
     var vs = window.speechSynthesis.getVoices();
     zhVoice = findVoice(document.getElementById('voiceZh').value) || findVoiceByLang(vs,'zh');
@@ -347,14 +339,12 @@
     var c = vs.filter(function(v){ return new RegExp('^'+prefix,'i').test(v.lang); });
     return c[0] || null;
   }
-
   if('speechSynthesis' in window){
     refreshVoices();
     window.speechSynthesis.onvoiceschanged = function(){ refreshVoices(); };
     // Chrome 长时间合成偶发停摆，周期唤醒
     window.setInterval(function(){ if(running && !pausedFlag && !cancelledFlag){ window.speechSynthesis.resume(); } }, 8000);
   }
-
   /* ================= 单词解析 ================= */
   function parseWords(text){
     var norm = String(text||'').replace(/\r\n/g,'\n');
@@ -380,7 +370,6 @@
     });
     return seen;
   }
-
   /* ================= 中文数字 ================= */
   function cnNum(n){
     var d='零一二三四五六七八九';
@@ -391,10 +380,9 @@
     if(n<10000){ var t2=Math.floor(n/1000), r2=n%1000; return d[t2]+'千'+(r2?(r2<100?'零'+cnNum(r2):cnNum(r2)):''); }
     return String(n);
   }
-
   /* ================= 序列生成 ================= */
   function getSettings(){
-    var ord = 'cn';
+    var ord = 'num'; // 默认阿拉伯数字
     var seg = document.getElementById('ordinalSeg');
     var act = seg.querySelector('button.active');
     if(act){ ord = act.getAttribute('data-mode'); }
@@ -407,7 +395,6 @@
       enRate: parseFloat(document.getElementById('enRateRange').value)
     };
   }
-
   function buildSteps(words, s, preview){
     var steps = [];
     // 开场（拆成多段避免 Chrome 长句截断）
@@ -429,16 +416,13 @@
     steps.push({k:'wait', ms:400});
     return steps;
   }
-
   /* ================= 播放器 ================= */
   var running = false, pausedFlag = false, cancelledFlag = false;
   var steps = [], totalWords = 0;
-
   function getVoice(voiceType){
     applySelectedVoices();
     return voiceType==='zh' ? zhVoice : enVoice;
   }
-
   function speak(text, voiceType, rate){
     return new Promise(function(resolve){
       if(!('speechSynthesis' in window)){ resolve(); return; }
@@ -452,7 +436,6 @@
       window.speechSynthesis.speak(u);
     });
   }
-
   function sleep(ms){
     return new Promise(function(resolve){
       var st = Date.now();
@@ -464,13 +447,11 @@
       })();
     });
   }
-
   function setStatus(txt, cls){
     var box = document.getElementById('status');
     box.className = 'status' + (cls ? (' ' + cls) : '');
     document.getElementById('statusText').textContent = txt;
   }
-
   async function run(stepsArr, wordsCount, opts){
     opts = opts || {};
     steps = stepsArr; totalWords = wordsCount;
@@ -508,7 +489,6 @@
     setStatus('完成', 'done');
     return 'done';
   }
-
   function syncButtons(playing){
     document.getElementById('btnPlay').disabled = playing;
     document.getElementById('btnRecord').disabled = playing;
@@ -518,7 +498,6 @@
     var pauseBtn = document.getElementById('btnPause');
     pauseBtn.textContent = pausedFlag ? '继续' : '暂停';
   }
-
   /* ================= 录音（下载） ================= */
   var recorder = null, recStream = null, recChunks = [];
   function supportedMime(){
@@ -558,10 +537,8 @@
     if(recStream){ recStream.getTracks().forEach(function(t){ t.stop(); }); }
     recorder = null; recStream = null; recChunks = [];
   }
-
   /* ================= UI 绑定 ================= */
   var $ = function(id){ return document.getElementById(id); };
-
   // 范围滑块联动
   function bindRange(rangeId, outId, suffix, dec){
     var r = $(rangeId), o = $(outId);
@@ -572,7 +549,6 @@
   bindRange('interGapRange','interGapVal','s',1);
   bindRange('zhRateRange','zhRateVal','×',2);
   bindRange('enRateRange','enRateVal','×',2);
-
   // 序号朗读方式
   var seg = $('ordinalSeg');
   seg.querySelectorAll('button').forEach(function(b){
@@ -581,7 +557,6 @@
       b.classList.add('active');
     });
   });
-
   // 单词输入解析预览
   var input = $('wordsInput');
   function renderPreview(){
@@ -609,27 +584,23 @@
   function escapeHtml(s){ return s.replace(/[&<>"']/g, function(m){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]; }); }
   input.addEventListener('input', renderPreview);
   renderPreview();
-
   function getWords(){
     var words = parseWords(input.value);
     if(!words.length){ toast('请先粘贴或输入至少一个单词', 'error'); return null; }
     return words;
   }
-
   // 在线播放
   $('btnPlay').addEventListener('click', function(){
     var words = getWords(); if(!words) return;
     var s = getSettings();
     run(buildSteps(words, s, false), words.length, {zhRate:s.zhRate, enRate:s.enRate});
   });
-
   // 试听
   $('btnPreview').addEventListener('click', function(){
     var words = getWords(); if(!words) return;
     var s = getSettings();
     run(buildSteps(words, s, true), Math.min(words.length,1), {zhRate:s.zhRate, enRate:s.enRate});
   });
-
   // 暂停/继续
   $('btnPause').addEventListener('click', function(){
     if(!running) return;
@@ -643,14 +614,12 @@
     syncButtons(true);
     setStatus(pausedFlag ? '已暂停' : '继续播放', 'running');
   });
-
   // 停止
   $('btnStop').addEventListener('click', function(){
     cancelledFlag = true;
     pausedFlag = false;
     if('speechSynthesis' in window){ window.speechSynthesis.cancel(); }
   });
-
   // 下载音频
   $('btnRecord').addEventListener('click', function(){
     var words = getWords(); if(!words) return;
@@ -686,7 +655,6 @@
       toast((err && err.message) ? err.message : '录音被取消或失败', 'error');
     });
   });
-
   // toast
   function toast(msg, type){
     var w = $('toastWrap');
@@ -697,8 +665,8 @@
     requestAnimationFrame(function(){ requestAnimationFrame(function(){ t.classList.add('show'); }); });
     setTimeout(function(){ t.classList.remove('show'); setTimeout(function(){ t.remove(); }, 300); }, 3400);
   }
-
 })();
 </script>
 </body>
 </html>
+<!-- （CreativeLearner） -->
