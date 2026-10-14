@@ -1,4 +1,8 @@
 # 单词听写音频生成器
+<br>
+🔥 [外语学习资料空间](http://2006b.ys168.com) 
+<br>
+🔥  [在线单词听写] (https://dctx.netlify.app/)
 
 粘贴单词列表，一键生成标准听写音频：开场口播与全部中文朗读使用 Microsoft Xiaoxiao（zh-CN-XiaoxiaoNeural）、英文单词与序号朗读使用 Microsoft Ryan（en-GB-RyanNeural），每个单词朗读两遍、自动报序号（默认阿拉伯数字英语朗读）、两遍之间有 6~7 秒书写间隔。可在线播放，也可直接下载 MP3（后台合成，无需录音）。
 
@@ -30,3 +34,5 @@
 ├── netlify/functions/tts.js # 语音合成转发函数（解决浏览器无法携带 Edg UA 的问题）
 └── package.json            # Netlify 函数依赖（ws）
 ```
+🔥  [单词挑战在线 Vocabulary Challenge](https://creativelearners.netlify.app)
+     [github](https://carfox163.github.io/cr/)
