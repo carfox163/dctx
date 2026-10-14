@@ -1,0 +1,9 @@
+{
+  "name": "word-dictation-audio-generator",
+  "version": "2.0.0",
+  "description": "单词听写音频生成器：粘贴单词列表，一键生成标准听写音频（WilliamMultilingualNeural 朗读，每词两遍、带序号与书写间隔），在线播放或下载 MP3。GitHub → Netlify 部署。",
+  "private": true,
+  "dependencies": {
+    "ws": "^8.17.1"
+  }
+}
